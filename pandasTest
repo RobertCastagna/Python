@@ -55,7 +55,7 @@ df.columns = [x.lower().replace(" ", "") for x in df.columns]
 # df = df.groupby(['exchange']).count()['count']
 # print(df)
 
-# efficient import of huge datasets
+# efficiently process huge datasets
 # computes aggregate count of "symbol" column on each chunk of 5 rows imported
 #new_df = pd.DataFrame(columns=df.columns)
 # for df in pd.read_csv('modified_sp500.csv', chunksize=5):
