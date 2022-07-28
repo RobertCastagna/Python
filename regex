@@ -1,0 +1,10 @@
+import re # https://docs.python.org/3/library/re.html
+
+# check email for login systems
+pattern = "[a-zA-Z0-9]+@[a-zA-Z]+\.(com|edu|net)"
+userInput = input()
+
+if(re.search(pattern, userInput)):
+    print("valid")
+else:
+    print("invalid")
